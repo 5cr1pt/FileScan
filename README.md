@@ -132,7 +132,7 @@ reque.py 里面的 self.timeout 变量
 [北斗Team的所有挖掘机工程师][3]
 [Saline大表哥][4]
 [Redfree师傅][5]
-
+[0aa.me](http://www.0aa.me) (原开发者，网站已挂)
 
   [1]: http://www.0aa.me/usr/uploads/2017/08/1738764841.png
   [2]: http://www.0aa.me/usr/uploads/2017/08/4102254597.png
