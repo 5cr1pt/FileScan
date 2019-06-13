@@ -1,6 +1,6 @@
-# FileScan x3 适配 Python 3
+# wfilescan x3 适配 Python 3
 
-> FileScan: 敏感文件扫描 / 二次判断降低误报率 / 扫描内容规则化 / 多目录扫描
+> wfilescan: 敏感文件扫描 / 二次判断降低误报率 / 扫描内容规则化 / 多目录扫描
 
 **程序只供交流，请勿用于非法用途，否则产生的一切后果自行承担！！!**
 
@@ -10,8 +10,10 @@
 pip install requests
 ```
 
-运行方式（网址前一定要带 `http(s)://`
+运行方式
 ----
+
+**网址前一定要带 `http(s)://`**
 ```
 python filescan.py http://www.0aa.me
 python filescan.py http://www.0aa.me/0aa/index.php
