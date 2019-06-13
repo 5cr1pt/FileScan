@@ -4,7 +4,10 @@
 import time
 import logging
 import requests
-import urlparse
+try:
+    import urlparse
+except:
+    import urllib.parse as urlparse
 
 # 防止https报错
 requests.packages.urllib3.disable_warnings()
@@ -25,7 +28,7 @@ class Reque(object):
         """
         发送请求
         """
-        if isinstance(data, basestring):
+        if isinstance(data, type(str)):
             method = "GET"
             url = data
             header = self.header
@@ -39,7 +42,7 @@ class Reque(object):
                 elif method == "POST":
                     response = requests.request(method, self.url, data=payload, headers=self.header, verify=False, timeout=self.timeout)
                 break
-            except Exception,e:
+            except Exception as e:
                 logging.error("requests请求失败: {}, 正在进行第{}次尝试".format(str(e), nums))
                 continue
         if nums == self.num:
@@ -52,5 +55,5 @@ if __name__ in "__main__":
     obj = Reque(url)
     response = obj.query(url)
     if response != None:
-        print response.status_code
+        print (response.status_code)
 

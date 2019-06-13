@@ -1,4 +1,4 @@
-# FileScan V1
+# FileScan x3 适配 Python 3
 
 > FileScan: 敏感文件扫描 / 二次判断降低误报率 / 扫描内容规则化 / 多目录扫描
 
@@ -10,7 +10,7 @@
 pip install requests
 ```
 
-运行方式
+运行方式（网址前一定要带 `http(s)://`
 ----
 ```
 python filescan.py http://www.0aa.me
@@ -118,7 +118,7 @@ reque.py 里面的 self.timeout 变量
 
 效果
 ----
-注：图中的url是我绑的host
+注：图中的url是我绑的host，图挂了
 
 ![run filescan][1]
 

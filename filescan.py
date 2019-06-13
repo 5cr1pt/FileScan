@@ -7,7 +7,10 @@ import re
 import sys
 import time
 import logging
-import urlparse
+try:
+    import urlparse
+except:
+    import urllib.parse as urlparse
 import threading
 
 from reque import Reque

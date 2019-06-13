@@ -2,7 +2,10 @@
 # 规则拼接处理
 
 import datetime
-import urlparse
+try:
+    import urlparse
+except:
+    import urllib.parse as urlparse
 
 from backup_rule import backup_rule
 
@@ -29,7 +32,7 @@ class Rule(object):
                 for num,str in enumerate(suffix):
                     for x,y in enumerate(_name):
                         _rule = y.get("rule_true")
-                        if isinstance(_rule, basestring):
+                        if isinstance(_rule, type(str)):
                             _rule = list(y.get("rule_true"))
                         for num,file in enumerate(_rule):
                             #print file
@@ -41,7 +44,7 @@ class Rule(object):
             else:
                 for x,y in enumerate(_name):
                     _rule = y.get("rule_true")
-                    if isinstance(_rule, basestring):
+                    if isinstance(_rule, type(str)):
                         # 字符串转list
                         _rule = [y.get("rule_true")]
                     for num, file in enumerate(_rule):
